@@ -1,6 +1,12 @@
         while wait(.4) do
                  local UI = require(game:GetService("ReplicatedStorage").Module:WaitForChild("UI"));
         for i,v in pairs (UI.CircleAction.Specs) do
+        if v.Name == "Collect $2,530 from AirDrop Reward" then
+        v:Callback(v, true)
+        end
+        end
+                 local UI = require(game:GetService("ReplicatedStorage").Module:WaitForChild("UI"));
+        for i,v in pairs (UI.CircleAction.Specs) do
         if v.Name == "Collect $2,461 from AirDrop Reward" then
         v:Callback(v, true)
         end
